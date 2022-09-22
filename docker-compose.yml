@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  build:
+    image: gorocksdb:dev
+    volumes:
+      - ../../.:/go/src/gorocksdb
+    build:
+      context: .
+      dockerfile: ./Dockerfile
